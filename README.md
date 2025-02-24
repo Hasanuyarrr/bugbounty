@@ -63,6 +63,6 @@ subdomain_enum/example.com/
 │   ├── ssti.txt
 │   ├── xss.txt
 ├── burp_proxied_urls.txt       # Burp Suite Proxy üzerinden istek yapılan URL'ler
-```
 
-README dosyasını bu bilgilerle güncelleyebilirim. Onaylıyor musunuz?
+
+
