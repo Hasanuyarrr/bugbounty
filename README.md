@@ -1,25 +1,20 @@
-# bugbounty
-
-
+```
 # 🕵️‍♂️ Subdomain & Endpoint Recon Script
-
-Bu **bash scripti**, belirli bir **domain** için **subdomain keşfi**, **endpoint toplama**, **aktif URL'leri belirleme** ve **potansiyel güvenlik açıklarını filtreleme** amacıyla geliştirilmiştir. Ayrıca, **Burp Suite proxy desteği** ile test süreçlerinizi kolaylaştırır.
+Bu bash scripti, belirli bir domain için subdomain keşfi, endpoint toplama, aktif URL'leri belirleme ve potansiyel güvenlik açıklarını filtreleme amacıyla geliştirilmiştir. Ayrıca, Burp Suite proxy desteği ile test süreçlerinizi kolaylaştırır.
 
 ## 🔥 Özellikler
-✅ **Subdomain keşfi:** `subfinder`, `assetfinder`  
-✅ **Bulunan subdomainlerde endpoint & parametre tarama:** `gau`, `waybackurls`, `gospider`, `hakrawler`, `katana`  
-✅ **URL temizleme & aktif test:** `uro`, `httpx`  
-✅ **Güvenlik açığı analizi:** `gf` (debug_logic, idor, xss, sqli, rce vb.)  
-✅ **Burp Suite proxy desteği**  
-
----
+✅ Subdomain keşfi: subfinder, assetfinder  
+✅ Bulunan subdomainlerde endpoint & parametre tarama: gau, waybackurls, gospider, hakrawler, katana  
+✅ URL temizleme & aktif test: uro, httpx  
+✅ Güvenlik açığı analizi: gf (debug_logic, idor, xss, sqli, rce vb.)  
+✅ Burp Suite proxy desteği  
 
 ## 📦 Gereksinimler & Kurulum
 
-### **1️⃣ Gerekli Araçları Yükleme**
+### 1️⃣ Gerekli Araçları Yükleme
 Bu scriptin çalışması için aşağıdaki araçların yüklü olması gerekmektedir. Eğer eksikse, aşağıdaki komutları çalıştırarak yükleyebilirsiniz.
 
-#### **🔹 Go Tabanlı Araçları Kurma**
+#### 🔹 Go Tabanlı Araçları Kurma
 ```bash
 go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 go install github.com/tomnomnom/assetfinder@latest
@@ -32,35 +27,19 @@ go install github.com/projectdiscovery/httpx/cmd/httpx@latest
 go install github.com/tomnomnom/gf@latest && cp -r $GOPATH/src/github.com/tomnomnom/gf/examples ~/.gf
 go install github.com/hahwul/dalfox/v2@latest
 pip3 install uro
+```
 
-2️⃣ Script’i İndirme ve Çalıştırma
-bash
-Kopyala
-Düzenle
-
+### 2️⃣ Script’i İndirme ve Çalıştırma
+```bash
 git clone https://github.com/Hasanuyarrr/bugbounty.git
-cd bounty.sh
+cd bugbounty
 sudo mv bounty.sh /usr/local/bin/bounty
 chmod +x bounty
-
-
 bounty -d example.com --proxy http://127.0.0.1:8080
+```
 
-
-
-
-
-
-
-
-
-
-
-
-📂 Çıktılar (subdomain_enum/example.com/ Klasöründe)
-bash
-Kopyala
-Düzenle
+## 📂 Çıktılar (subdomain_enum/example.com/ Klasöründe)
+```bash
 subdomain_enum/example.com/
 ├── subfinder.txt               # Subfinder ile bulunan subdomainler
 ├── assetfinder.txt             # Assetfinder ile bulunan subdomainler
@@ -84,3 +63,6 @@ subdomain_enum/example.com/
 │   ├── ssti.txt
 │   ├── xss.txt
 ├── burp_proxied_urls.txt       # Burp Suite Proxy üzerinden istek yapılan URL'ler
+```
+
+README dosyasını bu bilgilerle güncelleyebilirim. Onaylıyor musunuz?
