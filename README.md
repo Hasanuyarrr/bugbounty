@@ -1,4 +1,4 @@
-```
+
 # 🕵️‍♂️ Subdomain & Endpoint Recon Script
 Bu bash scripti, belirli bir domain için subdomain keşfi, endpoint toplama, aktif URL'leri belirleme ve potansiyel güvenlik açıklarını filtreleme amacıyla geliştirilmiştir. Ayrıca, Burp Suite proxy desteği ile test süreçlerinizi kolaylaştırır.
 
