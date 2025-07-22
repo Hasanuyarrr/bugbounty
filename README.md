@@ -38,7 +38,7 @@ sudo mv bounty.sh /usr/local/bin/bounty
 chmod +x bounty
 bounty -d example.com --proxy http://127.0.0.1:8080
 ```
-asd
+
 
 ## 📂 Çıktılar (subdomain_enum/example.com/ Klasöründe)
 ```bash
